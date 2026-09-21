@@ -7,10 +7,17 @@ function count_it() {
 }
 
 let saveEl = document.getElementById("save-el")
+// function save() {
+//     // let entries_txt = " " + count + " - "
+//     let entries_txt = " - " + count + " "
+//     saveEl.innerText += entries_txt
+// }
 function save() {
-    // let entries_txt = " " + count + " - "
-    let entries_txt = " - " + count + " "
-    saveEl.innerText += entries_txt
+    if (saveEl.innerText === "") {
+        saveEl.innerText = count;
+    } else {
+        saveEl.innerText += " - " + count;
+    }
 }
 
 let zero = document.getElementById("increase-count")
