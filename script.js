@@ -33,8 +33,16 @@ function count_it() {
 
 let saveEl = document.getElementById("save-el");
 
+// function save() {
+//     if (saveEl.innerText === "") {
+//         saveEl.innerText = count;
+//     } else {
+//         saveEl.innerText += " - " + count;
+//     }
+// }
+
 function save() {
-    if (saveEl.innerText === "") {
+    if (saveEl.innerText.trim().length === 0) {
         saveEl.innerText = count;
     } else {
         saveEl.innerText += " - " + count;
