@@ -92,7 +92,8 @@ function save() {
 
 let saveEl = document.getElementById("save-el")
 function save() {
-    let entries_txt = " " + count + " - "
+    // let entries_txt = " " + count + " - "
+    let entries_txt = " - " + count + " "
     saveEl.innerText += entries_txt
 }
 
