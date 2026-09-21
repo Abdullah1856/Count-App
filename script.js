@@ -33,25 +33,15 @@ function count_it() {
 
 let saveEl = document.getElementById("save-el");
 
-// function save() {
-//     if (saveEl.innerText === "") {
-//         saveEl.innerText = count;
-//     } else {
-//         saveEl.innerText += " - " + count;
-//     }
-// }
-
 function save() {
-    if (saveEl.innerText.trim().length === 0) {
-        saveEl.innerText = count;
+    if (saveEl.innerText === "Previous entries are: ") {
+        saveEl.innerText += count;
     } else {
         saveEl.innerText += " - " + count;
     }
 }
 
-let zero = document.getElementById("increase-count");
-
 function make_0() {
-    zero.innerText = 0;
+    increase_count.innerText = 0;
     count = 0;
 }
